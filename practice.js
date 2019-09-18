@@ -16,6 +16,11 @@
 
 //Code here
 
+var me = {
+  name: 'Olea',
+  age: '20'
+}
+
 ////////// PROBLEM 2 //////////
 
 /*
@@ -24,7 +29,16 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'bigbang',
+  food: 'Chicken Nuggets',
+  person: 'TK',
+  book: 'Harry Potter',
+  movie: 'about time',
+  holiday: 'summervacation',
+  car: 'renegade',
+  brand: 'jeep'
+}
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
@@ -50,7 +64,11 @@
 */
 
 //Code here
-
+var backPack = {
+  
+}
+var item = "firstPocket";
+backPack[item] = "chapstick";
 /*
   After you do the above, alert your entire backPack object.
 */
@@ -85,7 +103,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
@@ -96,7 +115,15 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {
+  alertHello: function () {
+     alert('hello')
+  },
+  logHello: function () {
+    console.log("hello")
+  }
+  
+}
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
@@ -118,7 +145,14 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson (name, birthday, ssn) {
+  obj = {
+    name: name,
+    birthday : birthday,
+    ssn: ssn
+  }
+  return obj;
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -127,3 +161,11 @@ var user2 = {
 */
 
 //Code Here
+function makeCard (cardNumber, expirationDate, securityCode) {
+  creditInfo = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return creditInfo;
+}
